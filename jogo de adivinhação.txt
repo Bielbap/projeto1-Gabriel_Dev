@@ -1,0 +1,15 @@
+from random import randint
+from time import sleep
+computador = randint(0, 5)
+print("-=-" * 20)
+print("Seja bem vindo ao meu jogo, tente adivinhar um numero de 0 a 5...")
+print("-=-" * 20)
+jogador = int(input("Digite aqui o numero:"))
+print("Processando...")
+sleep(3)
+if computador == jogador:
+    print("PARABENS! VOCE GANHOUUUU!!!")
+else:
+    print("Voce errou tente novamente!")
+
+print("Obrigado por jogar :)")
