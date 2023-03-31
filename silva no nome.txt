@@ -1,0 +1,18 @@
+from time import sleep
+
+
+print("\033[1;36m-=\033[m" * 20)
+print("Bem vindo. vamos analisar se seu nome tem Silva::")
+print("\033[1;36m-=\033[m" * 20)
+
+
+nome = str(input("Qual é seu nome?")).strip()
+
+
+print("Analisando seu nome")
+print("verificado...")
+sleep(3)
+
+
+print("Foi verificado e o resultado foi : {}".format("Silva" in nome.title()))
+
