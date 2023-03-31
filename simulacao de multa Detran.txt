@@ -1,0 +1,21 @@
+from time import sleep
+
+
+print("\033[1;31m-=\033[m" * 25)
+print("Seja bem vindo ao radar!\nPor favor informe abaixo a velocidade do seu carro;")
+print("\033[1;31m-=\033[m" * 25)
+
+
+
+velocidade = float(input("Qual a sua velocidade? "))
+print("Aguarde...")
+sleep(2)
+
+
+if velocidade > 80:
+    multa = (velocidade - 80) * 7
+    print("VOCE FOI MULTADO!")
+    print("voce ultrapassou o limite de 80km\nE tera que pagar uma multa de R$:{:.2f}".format(multa))
+
+
+print("Bom dia! dirija com cuidado")
